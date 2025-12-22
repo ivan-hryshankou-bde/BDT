@@ -1,0 +1,7 @@
+services:
+  alert-project:
+    build: .
+    volumes:
+      - ./data:/app/data
+    environment:
+      DATA_PATH: /app/data/data.csv

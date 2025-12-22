@@ -1,0 +1,12 @@
+# Inore this
+
+# Cache
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+.vscode/
+
+# Docker project's supplementary files
+/Docker/Test.ipynb
+/Docker/report.log
+/Docker/data/
