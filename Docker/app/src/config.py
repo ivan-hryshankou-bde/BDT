@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Config:
+    """Class holding configuration parameters for executing the module"""
     CHUNK_SIZE: int
     DATE_COLUMN: str
     ERROR_COLUMN: str

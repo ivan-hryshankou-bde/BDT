@@ -5,6 +5,7 @@ from src.rules import ErrorsPerTimeRule, ErrorsPerTimeAndAttributeRule
 from src.config import config
 
 def main():
+    """Main controller of the module for activating data processing"""
     data_path = os.getenv('DATA_PATH', 'data/data.csv')
     
     active_rules = [

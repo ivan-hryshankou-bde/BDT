@@ -3,5 +3,6 @@ services:
     build: .
     volumes:
       - ./data:/app/data
+      - ./reports:/app/reports
     environment:
       DATA_PATH: /app/data/data.csv
