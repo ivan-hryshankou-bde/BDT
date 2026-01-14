@@ -1,0 +1,10 @@
+2026-01-14 10:08:33,586 - INFO - Source file tiktok_google_play_reviews.csv found. Size: 80589608 bytes.
+2026-01-14 10:08:39,147 - INFO - Step 1: Ingesting GCS data and filling NULL values.
+2026-01-14 10:09:35,537 - INFO - Step 1 completed. Ingested file saved: s3://airflow-project-minio-stage-bucket/temp/step1_nulls_replaced.csv
+2026-01-14 10:09:41,154 - INFO - Step 2: Sorting dataset by timestamp.
+2026-01-14 10:10:02,828 - INFO - Step 2 completed. Sorted file saved: s3://airflow-project-minio-stage-bucket/temp/step2_sorted.csv
+2026-01-14 10:10:08,864 - INFO - Step 3: Sanitizing review content and stripping whitespaces.
+2026-01-14 10:10:24,048 - INFO - Step 3 completed. Sanitized final processed file ready: s3://airflow-project-minio-stage-bucket/final/processed_data.csv
+2026-01-14 10:10:31,999 - INFO - Initiating data load from MinIO to MongoDB.
+2026-01-14 10:10:36,315 - INFO - Target MongoDB collection cleared for fresh ingestion.
+2026-01-14 10:11:09,059 - INFO - Success: Inserted 307057 documents into MongoDB (DB: analytics_db, Coll: reviews)
